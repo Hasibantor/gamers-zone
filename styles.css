@@ -305,13 +305,14 @@ border-radius: 20px;
 /*5th style*/
 
 .last-section {
-    margin-top: 200px;
-    margin-bottom: 147px;
-
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 200px auto 147px auto;
 }
 
 .div-flex {
     display: flex;
+    gap: 20px;
     border: 3px solid white;
     border-radius: 50px;
     padding: 10px 15px;
@@ -534,20 +535,19 @@ footer {
 
 /* last section responsive*/
 @media screen and (max-width:576px) {
-    .last-section {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        align-items: 1rem;
-    }
-
+    
     .fast-line {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
-    .second-line{
-        display: none;
+    
+
+    .div-flex{
+        font-size: 10px;
+    }
+    .last-section{
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
